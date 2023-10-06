@@ -7,7 +7,7 @@ export default function ProfileImage() {
       <div className="flex justify-center py-6">
         <div className="h-60 w-60 rounded-full overflow-hidden">
           <Image
-            src="/Yalith.jpg"
+            src="/yalith.jpg"
             alt="Yalith Torres web developer"
             height={240}
             width={240}
