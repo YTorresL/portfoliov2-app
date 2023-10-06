@@ -13,11 +13,12 @@
 /out/
 
 # production
-/build
+# /build
 
 # misc
 .DS_Store
 *.pem
+/.history
 
 # debug
 npm-debug.log*

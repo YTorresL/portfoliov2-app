@@ -1,34 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Welcome to my new web portfolio! This is a more compact approach, transformed into an elegant landing page that simplifies the browsing experience. I acknowledge that my old portfolio was a bit overwhelming, but this new design is much simpler and easier to understand. Initially, it will only be available in English, but it still maintains the same design you know and appreciate from the previous one. Furthermore, I have worked on a more organized structure and will continue to improve it to provide you with the best possible experience. Thank you for visiting my portfolio!
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Versión de español: ¡Bienvenido a mi nuevo portafolio web! Este es un enfoque más compacto, transformado en una elegante landing page que simplifica la experiencia de navegación. Reconozco que mi viejo portafolio era un poco abrumador, pero este nuevo diseño es mucho más sencillo y fácil de entender. Inicialmente, solo estará disponible en inglés, pero sigue manteniendo el mismo diseño que conoces y aprecias del anterior. Además, he trabajado en una estructura más organizada y seguiré mejorándola para ofrecerte la mejor experiencia posible. ¡Gracias por visitar mi portafolio!
