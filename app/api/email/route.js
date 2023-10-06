@@ -1,5 +1,4 @@
 import { mailOptions, transporter } from "@/config/nodemailer"
-import { NextRequest, NextResponse } from "next/server"
 
 function sanitizeInput(input) {
   const sanitizedInput = input
