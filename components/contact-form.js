@@ -7,7 +7,6 @@ export default function Contact() {
   const [formValue, setFormValue] = useState(initValue)
   const [success, setSuccess] = useState(false)
   const [errors, setErrors] = useState(false)
-  console.log(formValue)
 
   const handleChange = (e) => {
     const { name, value } = e.target
