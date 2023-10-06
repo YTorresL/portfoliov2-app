@@ -12,6 +12,7 @@ export default function ProfileImage() {
             height={240}
             width={240}
             className="w-full h-full object-cover object-center"
+            priority={true}
           />
         </div>
       </div>
