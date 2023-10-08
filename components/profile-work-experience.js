@@ -28,7 +28,7 @@ export default function WorkExperience({ experience, selectExperience }) {
         ))}
       </div>
       {currentExperience && (
-        <div className="animate-fade-right" key={experience}>
+        <div className="animate-fade md:animate-fade-right" key={experience}>
           <ul>
             <li className="font-bold">{currentExperience.company}</li>
             <li className="flex flex-wrap sm:gap-2 gap-1">
