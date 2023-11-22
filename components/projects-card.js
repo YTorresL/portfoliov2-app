@@ -1,12 +1,12 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export default function Project({ title, type, image, date, link }) {
   return (
     <div className="border border-black p-4 grid grid-cols-1 gap-2 place-items-start rounded-lg">
-      <div className="h-48 w-full rounded-lg overflow-hidden">
+      <div className="h-40 md:h-36 lg:h-32 xl:h-48 w-full rounded-lg overflow-hidden">
         <img
           src={image}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top"
           alt={title}
           loading="lazy"
         />
@@ -27,5 +27,5 @@ export default function Project({ title, type, image, date, link }) {
         )}
       </div>
     </div>
-  )
+  );
 }

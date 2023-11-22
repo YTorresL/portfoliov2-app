@@ -1,17 +1,17 @@
-"use client"
-import Vivus from "vivus"
-import { useEffect } from "react"
+"use client";
+import Vivus from "vivus";
+import { useEffect } from "react";
 
 export default function VivusLinear() {
   useEffect(() => {
     // eslint-disable-next-line no-new
     new Vivus("linear", {
-      duration: 600,
+      duration: 400,
       type: "oneByOne",
-      delay: 400,
-      start: "autostart",
-    })
-  }, [])
+      delay: 300,
+      start: "autostart"
+    });
+  }, []);
 
   return (
     <div className="flex justify-end items-end">
@@ -29,11 +29,11 @@ export default function VivusLinear() {
             stroke: "#ffa712",
             strokeLinecap: "round",
             strokeLinejoin: "round",
-            strokeWidth: 2,
+            strokeWidth: 2
           }}
           transform="translate(-848.07 -106.5)"
         />
       </svg>
     </div>
-  )
+  );
 }
