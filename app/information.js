@@ -42,7 +42,7 @@ export const personalInformation = [
 ]
 
 export const perfilDescription =
-  "Passionate computer engineering student with a love for technology and creative design. My passion for cars and sports is reflected in my multidisciplinary approach to web development, where I use my drawing and illustration skills to create more appealing and visually striking web pages. I enjoy exploring various aspects of programming and design, making me a versatile and curious web developer."
+  "Computer engineer specialized in web application development, with over 2 years of experience in both frontend and backend development. Collaborating with small and large companies, facilitating the achievement of their goals in the development of online stores, corporate projects, and personal endeavors. Utilizing my expertise to efficiently address any potential issues that may arise during the development process."
 
 export const skills = [
   { icon: IconHtml5, name: "HTML" },
