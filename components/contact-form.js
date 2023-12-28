@@ -3,7 +3,7 @@ import { useState } from "react"
 import { sendContactForm } from "./contact-send-form"
 const initValue = { email: "" }
 
-export default function Contact() {
+export function Contact() {
   const [formValue, setFormValue] = useState(initValue)
   const [success, setSuccess] = useState(false)
   const [errors, setErrors] = useState(false)
@@ -37,7 +37,7 @@ export default function Contact() {
 
   return (
     <div className="grid grid-cols-1 gap-2">
-      <form className="flex flex-col sm:flex-row gap-2">
+      <form className="flex flex-col gap-2 sm:flex-row">
         <input
           type="email"
           className="border border-black rounded-full outline-none focus:border-[#F6AA19] px-5 py-1.5 appearance-none bg-transparent"

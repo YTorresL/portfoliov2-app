@@ -1,9 +1,9 @@
 import { Logo } from "./icons"
-import SocialMedia from "./social-media"
+import { SocialMedia } from "./social-media"
 
-export default function Header() {
+export function Header() {
   return (
-    <header className="flex justify-between items-center p-2 px-5 border-b border-black">
+    <header className="flex items-center justify-between p-2 px-5 border-b border-black">
       <Logo
         className="h-12"
         fill="#F6AA19"
