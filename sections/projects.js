@@ -135,6 +135,7 @@ function Project({ title, type, image, date, link }) {
         {link.length > 5 && (
           <Link
             href={link}
+            target="_blank"
             className={`text-[#F6AA19] hover:underline disabled:text-gray-400`}
           >
             Link...
