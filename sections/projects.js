@@ -25,7 +25,7 @@ function Filter() {
   const [categories, setCategories] = useState([])
   const [filters, setFilters] = useState({ category: "all" })
   const [loading, setLoading] = useState(true)
-  const [visibleProjects, setVisibleProjects] = useState(2) // Número inicial de proyectos visibles
+  const [visibleProjects, setVisibleProjects] = useState(3) // Número inicial de proyectos visibles
 
   useEffect(() => {
     fetchProjects().then(setProjects)

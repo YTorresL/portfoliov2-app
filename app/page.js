@@ -11,10 +11,12 @@ export default function Home() {
   return (
     <AppLayout>
       <Header />
-      <Intro />
-      <Profile />
-      <Projects />
-      <Contacts />
+      <main>
+        <Intro />
+        <Profile />
+        <Projects />
+        <Contacts />
+      </main>
       <Footer />
     </AppLayout>
   )
