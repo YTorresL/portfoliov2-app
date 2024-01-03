@@ -23,8 +23,8 @@ export const experiences = [
   {
     company: "Emprex",
     position: "Web developer",
-    start: "2023",
-    end: "Present",
+    start: "May 2023",
+    end: "Jan 2024",
     responsibility: [
       "Designed functional web applications and collaborated with designers to achieve visually appealing products.",
       "Implemented security measures to protect user data and privacy.",
@@ -35,8 +35,8 @@ export const experiences = [
   {
     company: "Pulso creativo",
     position: "Web developer",
-    start: "2022",
-    end: "2023",
+    start: "Dec 2022",
+    end: "Apr 2023",
     responsibility: [
       "Led the development of No-Code websites using WordPress.",
       "Implemented responsive designs to ensure an optimal user experience.",
@@ -47,7 +47,7 @@ export const experiences = [
   {
     company: "Inversiones Crealotodo SAS",
     position: "Graphic designer",
-    start: "2021",
+    start: "Jan 2021",
     end: "Present",
     responsibility: [
       "Conducted vectorization processes to enhance the quality and versatility of images.",
