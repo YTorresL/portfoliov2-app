@@ -99,6 +99,7 @@ function Filter() {
             title={item.title}
             date={item.date}
             image={item.image}
+            state={item.state}
             key={index}
           />
         ))}
@@ -115,7 +116,7 @@ function Filter() {
   )
 }
 
-function Project({ title, type, image, date, link }) {
+function Project({ title, type, image, date, link, state }) {
   return (
     <div className="grid grid-cols-1 gap-2 p-4 border border-black rounded-lg place-items-start">
       <div className="w-full h-40 overflow-hidden rounded-lg md:h-36 lg:h-32 xl:h-48">
@@ -126,7 +127,20 @@ function Project({ title, type, image, date, link }) {
           loading="lazy"
         />
       </div>
-      <h4 className="text-2xl font-corn">{title}</h4>
+      <div className="flex items-center gap-2">
+        <h4 className="text-2xl font-corn">{title}</h4>
+        <i
+          className={`${
+            state === "finished"
+              ? "text-red-600"
+              : state === "in progress"
+              ? " text-green-600"
+              : "text-gray-600"
+          }`}
+        >
+          {state}
+        </i>
+      </div>
       <span className="px-4 py-1 border border-black rounded-full">{type}</span>
       <div className="flex items-center justify-between w-full">
         <span className="px-4 py-1 border border-black rounded-full">
