@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { socialMedia } from "@/app/information"
+import { socialMedia } from "../data/intro"
 
 export function SocialMedia({ color = "000" }) {
   return (
