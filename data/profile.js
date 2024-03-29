@@ -8,7 +8,7 @@ import {
 } from "@/components/icons"
 
 export const description =
-  "Computer engineer specialized in web application development with over 1 year of experience in frontend (HTML, CSS, JavaScript) and backend (PHP). Collaborating with various companies, I lead projects for online and corporate stores, standing out for my ability to efficiently solve problems during development."
+  "With over a year of experience in web development and a computer engineering, I have contributed to the success of business projects. My strong command of technologies such as HTML5, CSS3, JavaScript, React.js, Node.js, Firebase, MongoDB, and MySQL highlights my profile. Additionally, I have experience in Git and GitHub for version control, as well as in developing applications with JavaFX and C++."
 
 export const skills = [
   { icon: IconHtml5, name: "HTML" },

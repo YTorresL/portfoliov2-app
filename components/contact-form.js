@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react"
 import { sendContactForm } from "./contact-send-form"
+
 const initValue = { email: "" }
 
 export function Contact() {
