@@ -53,11 +53,7 @@ export function Profile() {
           <div className="grid grid-cols-1 gap-4">
             <Typography tag={"p"}>{description}</Typography>
             <Subtitles>skills</Subtitles>
-            <div
-              className={`flex gap-2 flex-wrap ${
-                skills.length === 0 && "justify-center"
-              }`}
-            >
+            <div className="flex gap-2 flex-wrap justify-center">
               {skills.length > 0 ? (
                 skills
                   .sort(
