@@ -119,6 +119,9 @@ export default function Projects() {
             </Typography>
           )}
         </div>
+        <Typography tag={"p"} others={"text-center -mb-2"}>
+          {projectsToShow.length} of {filteredProjects.length} projects
+        </Typography>
         {hasMoreProjects && (
           <button
             className="border border-black w-48 mx-auto text-primary py-1.5 rounded-full"
