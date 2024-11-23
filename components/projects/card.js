@@ -11,11 +11,12 @@ export function Card({
   categories,
   description,
 }) {
+  const isLink = !!(link && link.length > 5)
   return (
     <a
-      href={link && link.length > 5 ? link : "#"}
-      target="_blank"
-      rel="noopener noreferrer"
+      href={isLink ? link : "#"}
+      target={isLink ? "_blank" : "_self"}
+      rel={isLink ? "noopener noreferrer" : ""}
       className="grid grid-cols-1 gap-2 p-4 border border-black rounded-lg place-items-start"
     >
       <figure className="w-full h-40 overflow-hidden rounded-lg md:h-36 lg:h-32 xl:h-48">
