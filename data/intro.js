@@ -1,9 +1,10 @@
-import { IconGithub, IconLinkedinCircled } from "@/components/icons"
+import { IconLinkedinCircled } from "@/assets/icons/linkedin"
+import { IconGithub } from "@/assets/icons/github"
 
 export const socialMedia = [
   {
     icon: IconLinkedinCircled,
-    link: "https://www.linkedin.com/in/yalith-torres/",
+    link: "https://www.linkedin.com/in/yalith/",
   },
   {
     icon: IconGithub,

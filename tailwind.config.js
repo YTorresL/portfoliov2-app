@@ -12,6 +12,11 @@ module.exports = {
         corn: ["SuperCorn-X3xGg", "sans-serif"],
         silly: ["SillyHandScriptRegular-X33EP", "sans-serif"],
       },
+      colors: {
+        primary: "#445334",
+        secondary: "#F6AA19",
+        Linen: "#FAF0E4",
+      },
     },
   },
   plugins: [require("tailwindcss-animated")],

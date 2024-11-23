@@ -1,4 +1,4 @@
-import { mailOptions, transporter } from "@/config/nodemailer"
+import { mailOptions, transporter } from "@/services/nodemailer/config"
 
 function sanitizeInput(input) {
   const sanitizedInput = input
@@ -17,7 +17,6 @@ export async function POST(NextRequest, NextResponse) {
 
   if (!email) {
     return new Response(null, { status: 400 })
-
   }
   try {
     await transporter.sendMail({
@@ -47,8 +46,6 @@ export async function POST(NextRequest, NextResponse) {
   } catch (err) {
     console.log(err)
     return new Response(null, { status: 400 })
-
   }
   return new Response(null, { status: 400 })
-
 }
