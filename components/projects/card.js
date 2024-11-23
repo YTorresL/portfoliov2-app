@@ -13,14 +13,19 @@ export function Card({
 }) {
   return (
     <div className="grid grid-cols-1 gap-2 p-4 border border-black rounded-lg place-items-start">
-      <figure className="w-full h-40 overflow-hidden rounded-lg md:h-36 lg:h-32 xl:h-48">
+      <a
+        className="w-full h-40 overflow-hidden rounded-lg md:h-36 lg:h-32 xl:h-48"
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+      >
         <img
           src={image}
           className="object-cover object-top w-full h-full"
           alt={title}
           loading="lazy"
         />
-      </figure>
+      </a>
       <div className="flex items-center gap-2">
         <Typography
           family={TYPO_STYLES.FAMILY.CORN}
