@@ -52,7 +52,7 @@ export function Card({
         )}
         <div className="flex items-center justify-between w-full">
           <div className="flex gap-1 text-white">
-            {categories.slice(0, 3).map((category) => (
+            {categories.slice(0, 2).map((category) => (
               <Typography
                 tag={"span"}
                 others={
@@ -64,7 +64,7 @@ export function Card({
                 {category}
               </Typography>
             ))}
-            {categories.length > 3 && (
+            {categories.length > 2 && (
               <div className="relative group ">
                 <Typography
                   tag={"span"}
@@ -73,10 +73,10 @@ export function Card({
                   }
                   size={TYPO_STYLES.SIZE.XS}
                 >
-                  +{categories.length - 3}
+                  +{categories.length - 2}
                 </Typography>
                 <div className="absolute bg-black/80 flex gap-0.5 flex-col p-2 text-xs rounded-lg left-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                  {categories.slice(3).map((category, index) => (
+                  {categories.slice(2).map((category, index) => (
                     <Typography tag={"span"} key={index}>
                       {category}
                     </Typography>
