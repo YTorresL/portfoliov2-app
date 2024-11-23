@@ -12,11 +12,15 @@ export function Card({
   description,
 }) {
   const isLink = !!(link && link.length > 5)
+
+  const Tag = isLink ? "a" : "div"
+
+  const classTag = isLink
+    ? { target: "_blank", rel: "noopener noreferrer", href: link }
+    : null
   return (
-    <a
-      href={isLink ? link : "#"}
-      target={isLink ? "_blank" : "_self"}
-      rel={isLink ? "noopener noreferrer" : ""}
+    <Tag
+      {...classTag}
       className="grid grid-cols-1 gap-2 p-4 border border-black rounded-lg place-items-start"
     >
       <figure className="w-full h-40 overflow-hidden rounded-lg md:h-36 lg:h-32 xl:h-48">
@@ -102,6 +106,6 @@ export function Card({
           )}
         </div>
       </div>
-    </a>
+    </Tag>
   )
 }
