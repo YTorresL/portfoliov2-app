@@ -3,6 +3,18 @@ export const description =
 
 export const experiences = [
   {
+    company: "Servieduca",
+    position: "Web development intern",
+    start: "Sep 2024",
+    end: "Oct 2024",
+    responsibility: [
+      "Trained in Angular and TypeScript development, gaining advanced knowledge in creating dynamic web applications.",
+      "Developed a screen to display recent payments received, with integrated navigation and interactive details.",
+      "Created interface elements such as footer and search button to enhance user experience.",
+    ],
+    tools: ["TypeScript", "Angular", "HTML", "CSS", "JavaScript"],
+  },
+  {
     company: "Emprex",
     position: "Web developer",
     start: "May 2023",
@@ -22,7 +34,7 @@ export const experiences = [
     responsibility: [
       "Led the development of No-Code websites using WordPress.",
       "Implemented responsive designs to ensure an optimal user experience.",
-      " Optimized the speed and performance of web pages to enhance efficiency.",
+      "Optimized the speed and performance of web pages to enhance efficiency.",
     ],
     tools: ["WordPress", "HTML", "CSS", "JavaScript", "PHP", "MySQL"],
   },
@@ -52,5 +64,13 @@ export const information = [
   {
     title: "English",
     paragraph: "Pre-intermediate",
+  },
+  {
+    title: "Spanish",
+    paragraph: "Native",
+  },
+  {
+    title: "Experience",
+    paragraph: "+1 year",
   },
 ]

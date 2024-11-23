@@ -54,18 +54,23 @@ export function Profile() {
             <Typography tag={"p"}>{description}</Typography>
             <Subtitles>skills</Subtitles>
             <div
-              className={`flex gap-2 ${
+              className={`flex gap-2 flex-wrap ${
                 skills.length === 0 && "justify-center"
               }`}
             >
               {skills.length > 0 ? (
-                skills.map((skill, index) => (
-                  <Skill
-                    name={skill.name}
-                    projects={skill.projects}
-                    key={index}
-                  />
-                ))
+                skills
+                  .sort(
+                    (a, b) =>
+                      b.projects - a.projects || a.name.localeCompare(b.name),
+                  )
+                  .map((skill, index) => (
+                    <Skill
+                      name={skill.name}
+                      projects={skill.projects}
+                      key={index}
+                    />
+                  ))
               ) : (
                 <Typography tag={"p"}>No skills available.</Typography>
               )}

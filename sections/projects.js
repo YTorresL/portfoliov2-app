@@ -95,7 +95,7 @@ export default function Projects() {
           ))}
         </div>
         <div
-          className={`grid grid-cols-1 gap-3 ${
+          className={`grid grid-cols-1 gap-3 mt-3 ${
             projects.length > 0 && "lg:grid-cols-3 sm:grid-cols-2"
           } animate-fade`}
           key={filters.category}
@@ -109,6 +109,7 @@ export default function Projects() {
                 image={item.image}
                 state={item.state}
                 categories={item.languages}
+                description={item.description}
                 key={index}
               />
             ))

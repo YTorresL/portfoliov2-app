@@ -22,7 +22,7 @@ export const TYPO_STYLES = {
 }
 
 const textFamily = {
-  corn: "font-corn",
+  corn: "font-corn leading-none",
   silly: "font-silly",
 }
 
