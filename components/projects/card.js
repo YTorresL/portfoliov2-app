@@ -29,6 +29,8 @@ export function Card({
           className="object-cover object-top w-full h-full"
           alt={title}
           loading="lazy"
+          width={364}
+          height={192}
         />
       </figure>
       <div className="flex items-center gap-2">
