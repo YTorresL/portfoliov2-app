@@ -38,7 +38,7 @@ export function Experience({ experience, selectExperience, experiences }) {
               </div>
             </li>
             <li className="flex flex-wrap sm:gap-2">
-              <ul className="my-2 list-disc list-inside">
+              <ul className="my-2 list-disc ml-2">
                 {currentExperience.responsibility.map((item, index) => (
                   <li key={index}>
                    <Typography tag={"p"}>{item}</Typography> </li>
