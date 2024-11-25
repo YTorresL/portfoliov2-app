@@ -1,4 +1,5 @@
 import { IconStar } from "@/assets/icons/star"
+import { Typography } from "../common/typography"
 
 export function Experience({ experience, selectExperience, experiences }) {
   const currentExperience = experiences[experience]
@@ -39,7 +40,8 @@ export function Experience({ experience, selectExperience, experiences }) {
             <li className="flex flex-wrap sm:gap-2">
               <ul className="my-2 list-disc list-inside">
                 {currentExperience.responsibility.map((item, index) => (
-                  <li key={index}>{item}</li>
+                  <li key={index}>
+                   <Typography tag={"p"}>{item}</Typography> </li>
                 ))}
               </ul>
             </li>

@@ -33,6 +33,7 @@ export function Card({
       </figure>
       <div className="flex items-center gap-2">
         <Typography
+        tag={"h5"}
           family={TYPO_STYLES.FAMILY.CORN}
           size={TYPO_STYLES.SIZE["2XL"]}
         >

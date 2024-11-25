@@ -22,7 +22,7 @@ export function Intro() {
           family={TYPO_STYLES.FAMILY.SILLY}
           size={TYPO_STYLES.SIZE["6XL"]}
           color={TYPO_STYLES.COLOR.SECONDARY}
-          tag={"span"}
+          tag={"h2"}
           others={"xl:-mt-[3rem] md:-mt-8 -mt-7 tracking-wide"}
         >
           {headline}

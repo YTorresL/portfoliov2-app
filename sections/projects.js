@@ -76,7 +76,7 @@ export default function Projects() {
     >
       <div className="grid grid-cols-1 gap-4">
         <Typography
-          tag={"h2"}
+          tag={"h4"}
           size={TYPO_STYLES.SIZE["3XL"]}
           color={TYPO_STYLES.COLOR.PRIMARY}
           family={TYPO_STYLES.FAMILY.CORN}
