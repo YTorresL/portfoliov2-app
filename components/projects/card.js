@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Typography } from "@/components/common/typography"
 import { TYPO_STYLES } from "../common/typography"
+import Image from "next/image"
 
 export function Card({
   title,
@@ -24,7 +25,7 @@ export function Card({
       className="grid grid-cols-1 gap-2 p-4 border border-black rounded-lg place-items-start"
     >
       <figure className="w-full h-40 overflow-hidden rounded-lg md:h-36 lg:h-32 xl:h-48">
-        <img
+        <Image
           src={image}
           className="object-cover object-top w-full h-full"
           alt={title}
