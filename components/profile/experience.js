@@ -28,7 +28,10 @@ export function Experience({ experience, selectExperience, experiences }) {
         ))}
       </div>
       {currentExperience && (
-        <div className="animate-fade md:animate-fade-right" key={experience}>
+        <div
+          className="animate-fade md:animate-fade-right lg:min-h-[250px] min-h-[260px]"
+          key={experience}
+        >
           <ul>
             <li className="font-bold">{currentExperience.company}</li>
             <li className="flex flex-wrap gap-1 sm:gap-2">
@@ -41,7 +44,8 @@ export function Experience({ experience, selectExperience, experiences }) {
               <ul className="my-2 list-disc ml-2">
                 {currentExperience.responsibility.map((item, index) => (
                   <li key={index}>
-                   <Typography tag={"p"}>{item}</Typography> </li>
+                    <Typography tag={"p"}>{item}</Typography>{" "}
+                  </li>
                 ))}
               </ul>
             </li>
