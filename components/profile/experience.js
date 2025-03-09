@@ -12,8 +12,8 @@ export function Experience({ experience, selectExperience, experiences }) {
               className={`${
                 experience === index
                   ? "border-[#F6AA19]"
-                  : "border-black hover:border-[#445334]"
-              } border py-1.5 rounded-lg text-[#445334] transition-colors relative w-full sm:w-60`}
+                  : "border-black"
+              } border py-1.5 rounded-lg text-[#445334] transition-colors relative w-full sm:w-60 hover:bg-primary hover:text-white hover:border-white`}
               onClick={() => selectExperience(index)}
             >
               {experience === index && (

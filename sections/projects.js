@@ -124,7 +124,7 @@ export default function Projects() {
         </Typography>
         {hasMoreProjects && (
           <button
-            className="border border-black w-48 mx-auto text-primary py-1.5 rounded-full"
+            className="border border-black w-48 mx-auto text-primary py-2 rounded-full transition-colors hover:bg-primary hover:text-white hover:border-white"
             onClick={handleLoadMore}
           >
             See more
