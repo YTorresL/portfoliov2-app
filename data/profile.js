@@ -3,6 +3,18 @@ export const description =
 
 export const experiences = [
   {
+    company: "2ffactor",
+    position: "Wordpress Developer",
+    start: "Feb 2025",
+    end: "Present",
+    responsibility: [
+      "Led the redesign and development of websites, enhancing the user experience and optimizing the interface for more intuitive and appealing navigation.",
+      "Managed domain migrations, ensuring service continuity and proper configuration of DNS, SSL, and redirects.",
+      "Implemented solutions for integrating products from external stores into WordPress platforms, using APIs and custom plugins to ensure efficient display and synchronization.",
+    ],
+    tools: ["WordPress", "Divi", "Elementor", "HTML", "CSS", "WooCommerce"],
+  },
+  {
     company: "Servieduca",
     position: "Web development intern",
     start: "Sep 2024",
@@ -16,7 +28,7 @@ export const experiences = [
   },
   {
     company: "Emprex",
-    position: "Web developer",
+    position: "Full-stack Developer",
     start: "May 2023",
     end: "Jan 2024",
     responsibility: [
@@ -28,7 +40,7 @@ export const experiences = [
   },
   {
     company: "Pulso creativo",
-    position: "Web developer",
+    position: "Wordpress Developer",
     start: "Dec 2022",
     end: "Apr 2023",
     responsibility: [

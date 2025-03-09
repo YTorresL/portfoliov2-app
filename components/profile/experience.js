@@ -29,7 +29,7 @@ export function Experience({ experience, selectExperience, experiences }) {
       </div>
       {currentExperience && (
         <div
-          className="animate-fade md:animate-fade-right lg:min-h-[250px] min-h-[260px]"
+          className="animate-fade md:animate-fade-right lg:min-h-[290px] min-h-[390px]"
           key={experience}
         >
           <ul>
