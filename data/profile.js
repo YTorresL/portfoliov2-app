@@ -1,5 +1,5 @@
 export const description =
-  "With over a year of experience in web development and a computer engineering, I have contributed to the success of business projects. My strong command of technologies such as HTML5, CSS3, JavaScript, React.js, Node.js, Firebase, MongoDB, and MySQL highlights my profile. Additionally, I have experience in Git and GitHub for version control, as well as in developing applications with JavaFX and C++."
+  "Computer Engineer passionate about continuous technical learning and problem-solving in collaborative environments. Experienced in web and backend application development, with strong motivation to apply these skills in the energy sector as a Field Engineer or through tech-focused internships. Recognized for critical thinking, adaptability, and commitment to operational excellence. Eager to contribute innovative solutions to multidisciplinary projects, including dynamic field environments and emerging technologies such as IoT, data analytics, and predictive maintenance."
 
 export const experiences = [
   {
