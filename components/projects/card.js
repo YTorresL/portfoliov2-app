@@ -9,21 +9,13 @@ export function Card({
   image,
   link,
   state,
-  categories,
+  categories = [],
   description,
 }) {
   const isLink = !!(link && link.length > 5)
 
-  const Tag = isLink ? "a" : "div"
-
-  const classTag = isLink
-    ? { target: "_blank", rel: "noopener noreferrer", href: link }
-    : null
-  return (
-    <Tag
-      {...classTag}
-      className="grid grid-cols-1 gap-2 p-4 border border-black rounded-lg place-items-start"
-    >
+  const CardContent = (
+    <>
       <figure className="w-full h-40 overflow-hidden rounded-lg md:h-36 lg:h-32 xl:h-48">
         <Image
           src={image}
@@ -34,9 +26,10 @@ export function Card({
           height={192}
         />
       </figure>
+
       <div className="flex items-center gap-2">
         <Typography
-        tag={"h5"}
+          tag={"h5"}
           family={TYPO_STYLES.FAMILY.CORN}
           size={TYPO_STYLES.SIZE["2XL"]}
         >
@@ -44,12 +37,13 @@ export function Card({
         </Typography>
         <i
           className={`leading-none ${
-            state === "finished" ? "text-red-600" : " text-green-600"
+            state === "finished" ? "text-red-600" : "text-green-600"
           }`}
         >
           {state}
         </i>
       </div>
+
       <div className="flex flex-col gap-2 w-full">
         <div className="flex gap-2 items-center">
           <Typography
@@ -69,9 +63,7 @@ export function Card({
             {categories.slice(0, 2).map((category) => (
               <Typography
                 tag={"span"}
-                others={
-                  "px-3 py-1 bg-primary rounded-full hover:cursor-pointer"
-                }
+                others="px-3 py-1 bg-primary rounded-full hover:cursor-pointer"
                 size={TYPO_STYLES.SIZE.XS}
                 key={category}
               >
@@ -79,12 +71,10 @@ export function Card({
               </Typography>
             ))}
             {categories.length > 2 && (
-              <div className="relative group ">
+              <div className="relative group">
                 <Typography
                   tag={"span"}
-                  others={
-                    "px-3 py-1 bg-primary rounded-full hover:cursor-pointer"
-                  }
+                  others="px-3 py-1 bg-primary rounded-full hover:cursor-pointer"
                   size={TYPO_STYLES.SIZE.XS}
                 >
                   +{categories.length - 2}
@@ -99,17 +89,29 @@ export function Card({
               </div>
             )}
           </div>
-          {link && link.length > 5 && (
+          {isLink && (
             <Link
               href={link}
               target="_blank"
-              className={`text-secondary hover:underline disabled:text-gray-400`}
+              className="text-secondary hover:underline disabled:text-gray-400"
             >
               Link...
             </Link>
           )}
         </div>
       </div>
-    </Tag>
+    </>
+  )
+
+  return (
+    <div className="grid grid-cols-1 gap-2 p-4 border border-black rounded-lg place-items-start">
+      {isLink ? (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          {CardContent}
+        </a>
+      ) : (
+        CardContent
+      )}
+    </div>
   )
 }
