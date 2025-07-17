@@ -106,7 +106,12 @@ export function Card({
   return (
     <div className="grid grid-cols-1 gap-2 p-4 border border-black rounded-lg place-items-start">
       {isLink ? (
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="grid gap-2"
+        >
           {CardContent}
         </a>
       ) : (
