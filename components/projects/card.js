@@ -89,15 +89,7 @@ export function Card({
               </div>
             )}
           </div>
-          {isLink && (
-            <Link
-              href={link}
-              target="_blank"
-              className="text-secondary hover:underline disabled:text-gray-400"
-            >
-              Link...
-            </Link>
-          )}
+          {/* Movemos el link fuera del elemento clickeable principal */}
         </div>
       </div>
     </>
@@ -106,16 +98,32 @@ export function Card({
   return (
     <div className="grid grid-cols-1 gap-2 p-4 border border-black rounded-lg place-items-start">
       {isLink ? (
-        <a
+        <Link
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="grid gap-2"
+          className="grid gap-2 w-full"
         >
           {CardContent}
-        </a>
+        </Link>
       ) : (
-        CardContent
+        <div className="grid gap-2 w-full">
+          {CardContent}
+        </div>
+      )}
+      
+      {/* Link separado para evitar anidación */}
+      {isLink && (
+        <div className="w-full flex justify-end mt-0">
+          <Link
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary hover:underline disabled:text-gray-400"
+          >
+            Link...
+          </Link>
+        </div>
       )}
     </div>
   )

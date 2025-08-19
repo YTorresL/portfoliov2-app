@@ -8,6 +8,7 @@ export default function Projects({ projects }) {
   const [filters, setFilters] = useState({ category: "all" })
   const [visibleProjects, setVisibleProjects] = useState(3) // Número inicial de proyectos visibles
 
+  console.log(projects)
   const filterProjects = () => {
     const { category } = filters
     return projects.filter((project) => {
