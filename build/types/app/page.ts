@@ -1,4 +1,4 @@
-// File: C:\Users\yalit\Documents\GitHub\portfoliov2-app\app\page.js
+// File: /home/yalithtorres/Github/portfoliov2-app/app/page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
