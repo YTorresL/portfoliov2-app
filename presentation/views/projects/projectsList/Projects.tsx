@@ -1,8 +1,8 @@
-import { useProjects } from "./hooks/useProjects"
+import { getProjectsCached } from "../../../../application/loaders/getProjectsCached"
 import { ProjectsContainer } from "./components/ProjectsContainer"
 
 export async function Projects() {
-  const { projects } = await useProjects()
+const projects = await getProjectsCached()
 
   return (
     <section
