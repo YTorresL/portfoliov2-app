@@ -37,6 +37,7 @@ export function ProjectContent({ project }: { project: Project }) {
           {links.map((link) =>
             link.url ? (
               <Link
+                key={link.type}
                 href={link.type === "live" ? link.url : link.url}
                 target="_blank"
                 rel="noopener noreferrer"

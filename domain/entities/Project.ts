@@ -1,16 +1,3 @@
-export interface Project {
-  id: string
-  createdAt: string | null
-  description: string
-  images: string[]
-  technologies: string[]
-  links: Link[]
-  state: "finished" | "in-progress" | "planned"
-  title: string
-  type: TypeProject
-  content: string[]
-}
-
 export type Links = "github" | "live"
 
 export interface Link {
@@ -25,6 +12,20 @@ export type TypeProject =
   | "Internship"
   | "Challenges"
   | "Technical test"
+  
+export interface Project {
+  id: string
+  createdAt: string | null
+  description: string
+  images: string[]
+  technologies: string[]
+  links: Link[]
+  state: "finished" | "in-progress" | "planned"
+  title: string
+  type: TypeProject
+  content: string[]
+}
+
 
 export function hasLanguage(project: Project, language: string): boolean {
   return project.technologies.includes(language)

@@ -33,9 +33,9 @@ export async function ProjectView({
   }
 
   return (
-    <>
+    <div className="min-h-screen">
       <ProjectContent project={project} />
       <ProjectFooter project={project} />
-    </>
+    </div>
   )
 }

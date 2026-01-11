@@ -14,7 +14,7 @@ export function ProjectsContainer({ projects }: { projects: Project[] }) {
     <>
       <div className="flex flex-wrap gap-3">
         <ProjectsCategories
-          categories={categories}
+          categories={["all", ...categories]}
           currentCategory={category}
           onCategoryChange={handleCategoryChange}
         />
