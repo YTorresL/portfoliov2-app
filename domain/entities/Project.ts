@@ -24,9 +24,14 @@ export interface Project {
   title: string
   type: TypeProject
   content: string[]
+  visibility: boolean
 }
 
 
 export function hasLanguage(project: Project, language: string): boolean {
   return project.technologies.includes(language)
+}
+
+export function isVisible(project: Project): boolean {
+  return project.visibility;
 }

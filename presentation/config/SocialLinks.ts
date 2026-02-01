@@ -1,5 +1,5 @@
-import { IconGithub } from "../../assets/icons/github"
-import { IconLinkedinCircled } from "../../assets/icons/linkedin"
+import { IconGithub } from "../assets/icons/github"
+import { IconLinkedinCircled } from "../assets/icons/linkedin"
 
 export const SOCIAL_LINKS = [
   {

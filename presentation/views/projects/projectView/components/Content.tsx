@@ -2,8 +2,8 @@ import Link from "next/link"
 import { Project } from "../../../../../domain/entities/Project"
 import { ImagesSlider } from "./ImagesSlider"
 import { ProjectHeader } from "./Header"
-import { IconGithub } from "../../../../../assets/icons/github"
-import { IconTemplate } from "../../../../../assets/icons/live"
+import { IconGithub } from "../../../../assets/icons/github"
+import { IconTemplate } from "../../../../assets/icons/live"
 
 export function ProjectContent({ project }: { project: Project }) {
   const { type, title, images, description, technologies, links } = project

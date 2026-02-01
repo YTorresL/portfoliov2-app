@@ -1,5 +1,5 @@
 "use client"
-import { IconStar } from "../../../../../assets/icons/star"
+import { IconStar } from "../../../../assets/icons/star"
 import { WORK_EXPERIENCES } from "../config/Profile"
 import { useExperiences } from "../hooks/useExperiences"
 

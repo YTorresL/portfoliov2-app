@@ -37,6 +37,7 @@ export function ProjectRepository(): IProjectRepository {
                 links: data.links || [],
                 content: data.content || [],
                 state: data.state || "",
+                visibility: data.visibility
               }),
             ) as Project
           })
