@@ -22,7 +22,6 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const projects = await getProjectsCached()
-
   const { getProjectById } = ProjectController()
   const project = getProjectById(projects, params.slug)
 
@@ -30,16 +29,54 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!project) {
     return {
-      title: "Project not found | Portfolio",
+      title: "Project not found | YTorres Portfolio",
       robots: { index: false },
     }
   }
 
+  const projectUrl = `${siteUrl}/projects/${project.id}`
+  const coverImage = project.images?.[0] ?? `${siteUrl}/yalith.jpg`
+
+  // Truncate description for meta tags (max ~160 chars)
+  const metaDescription =
+    project.description.length > 160
+      ? project.description.slice(0, 157) + "..."
+      : project.description
+
   return {
-    title: `${project.title} | Portfolio`,
-    description: project.description,
+    title: `${project.title} | YTorres Portfolio`,
+    description: metaDescription,
+    keywords: [
+      ...project.technologies,
+      "web developer",
+      "Yalith Torres",
+      project.type,
+    ].join(", "),
+    authors: [{ name: "Yalith Torres", url: siteUrl }],
     alternates: {
-      canonical: `${siteUrl}/projects/${project.id}`,
+      canonical: projectUrl,
+    },
+    openGraph: {
+      title: `${project.title} | YTorres Portfolio`,
+      description: metaDescription,
+      url: projectUrl,
+      siteName: "YTorres Portfolio",
+      locale: "en_US",
+      type: "article",
+      images: [
+        {
+          url: coverImage,
+          width: 1200,
+          height: 630,
+          alt: `${project.title} project preview`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | YTorres Portfolio`,
+      description: metaDescription,
+      images: [coverImage],
     },
   }
 }

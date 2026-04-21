@@ -1,14 +1,32 @@
 "use client"
+import { useState } from "react"
 import { Project } from "../../../../../domain/entities/Project"
-import { useCategories } from "../hooks/useCategories"
-import { useFiltered } from "../hooks/useFiltered"
+import { ProjectController } from "../../../../../application/controllers/getProject"
+import { CategoryController } from "../../../../../application/controllers/getCategory"
 import { ProjectsCategories } from "./ProjectsCategories"
 import { ProjectsGrid } from "./ProjectsGrid"
 import { ProjectsPagination } from "./ProjectsPagination"
 
+const PAGE_SIZE = 3
+
 export function ProjectsContainer({ projects }: { projects: Project[] }) {
-  const { categories, category, handleCategoryChange } = useCategories(projects)
-  const { filteredProjects } = useFiltered(projects, category)
+  const [category, setCategory] = useState<string>("all")
+  const [page, setPage] = useState(1)
+
+  const { getProjectCategories } = CategoryController()
+  const categories = getProjectCategories(projects)
+
+  const { getFilterProjects } = ProjectController()
+  const dataPaginate = getFilterProjects(projects, category, page, PAGE_SIZE)
+
+  const handleCategoryChange = (newCategory: string) => {
+    setCategory(newCategory)
+    setPage(1)
+  }
+
+  const handleLoadMore = () => {
+    setPage((prev) => prev + 1)
+  }
 
   return (
     <>
@@ -19,8 +37,8 @@ export function ProjectsContainer({ projects }: { projects: Project[] }) {
           onCategoryChange={handleCategoryChange}
         />
       </div>
-      <ProjectsGrid dataPaginate={filteredProjects} />
-      <ProjectsPagination dataPaginate={filteredProjects} />
+      <ProjectsGrid projects={dataPaginate.paginatedProjects} />
+      <ProjectsPagination dataPaginate={{ ...dataPaginate, handleLoadMore }} />
     </>
   )
 }
