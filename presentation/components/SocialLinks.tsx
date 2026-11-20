@@ -5,7 +5,12 @@ export function SocialLinks({ color = "000" }: { color?: string } = {}) {
   return (
     <div className="flex space-x-4">
       {SOCIAL_LINKS.map((item) => (
-        <Link href={item.link} key={item.link} target="_blank">
+        <Link
+          href={item.link}
+          key={item.link}
+          target="_blank"
+          aria-label={item.label}
+        >
           <item.icon className={`h-8 w-8 text-[#${color}]`} />
         </Link>
       ))}

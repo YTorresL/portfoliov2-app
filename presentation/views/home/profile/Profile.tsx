@@ -11,25 +11,21 @@ export function Profile() {
           <MainInfo />
         </aside>
         <div className="p-5 lg:col-span-3 md:p-8 space-y-6">
-          <article>
-            <strong className="text-primary text-2xl font-corn">
-              Computer Engineer and Freelance Programmer
-            </strong>
-            <p className="w-full lg:w-3/4">
-              Specialized in web and mobile application development.
-            </p>
-          </article>
-
           <article className="space-y-4">
             <h3 className="text-2xl font-corn leading-none flex-shrink-0 text-primary">
               About Me
             </h3>
             <p>
-              My name is <strong>Yalith Torres</strong>. Although I have always been curious
-              about technology, it was in 2022 when this journey into the world
-              of development truly began. Since then, I have been focused on
-              continuously learning, improving my technical skills, and growing
-              as a person.
+              My name is <strong>Yalith Torres</strong>. Although I have always
+              been curious about technology, it was in 2022 when this journey
+              into the world of development truly began. Since then, I have been
+              focused on continuously learning, improving my technical skills,
+              and growing as a person.
+            </p>
+            <p>
+              I enjoy learning through professional and collaborative projects,
+              and expanding into Artificial Intelligence and automation. In
+              2026, I founded Desyc Software.
             </p>
           </article>
           <article className="space-y-4">

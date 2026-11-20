@@ -4,7 +4,6 @@ import { WORK_EXPERIENCES } from "../config/Profile"
 import { useExperiences } from "../hooks/useExperiences"
 
 export function Work() {
-  const {} = useExperiences()
   const { currentExperience, handleExperienceChange: selectExperience } =
     useExperiences()
 

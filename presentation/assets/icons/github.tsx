@@ -1,3 +1,5 @@
+import React from "react";
+
 export function IconGithub(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
